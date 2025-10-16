@@ -1,6 +1,34 @@
 nav {  
-   background: linear-gradient(135deg, #007bff31, #6f42c1);
-            
-       
-        
+background: linear-gradient(90deg, #1E3C72, #2A5298);
+box-shadow: 0 2px 15px rgba(30, 60, 114, 0.5);
+
+        .nav-link {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #e9e634;
+        }
+
+         .navbar-brand {
+               color: white;
+               font-weight: bold;
+               font-size: 1.5rem;
+               letter-spacing: 1px;
+               text-transform: uppercase;
+               transition: color 0.3s;
+               padding-left: 5%;
+         }
+
+         .navbar-toggler {
+               border-color: rgba(255, 255, 255, 0.1);
+         }
+         
+        font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+
     }

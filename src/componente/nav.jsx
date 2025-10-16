@@ -8,7 +8,7 @@ function Nav() {
   return (
     <div>
       <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-        <a className="navbar-brand" href="#">Meniu</a>
+        <a className="navbar-brand" href="/">Meniu</a>
 
         <button
           className="navbar-toggler"
@@ -25,7 +25,7 @@ function Nav() {
               <a className="nav-link" to="/pareri">Parerile elevilor</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Capsula timpului</a>
+              <a className="nav-link" href="/capsula-timpului">Capsula timpului</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Liceul de-a lungul timpului</a>

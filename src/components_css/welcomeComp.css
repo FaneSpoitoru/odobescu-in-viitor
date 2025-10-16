@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg,  #136ccad2, #140236a6);
+  background: linear-gradient(135deg, #1E3C72, #2A5298, #FDC830);
   color: white;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -25,7 +25,7 @@
 
 .hero button {
   background: white;
-  color: #6f42c1;
+  color: #2451b3;
   border: none;
   padding: 12px 25px;
   border-radius: 25px;
