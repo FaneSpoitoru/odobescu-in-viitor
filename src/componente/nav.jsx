@@ -2,7 +2,7 @@ import '../components_css/nav.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { Routes, Route } from 'react-router-dom';
-import pareri from './pareri.jsx'; 
+import pareri from '../pages/pareri.jsx'; 
 
 function Nav() {
   return (
@@ -22,7 +22,7 @@ function Nav() {
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" to="/pareri">Parerile elevilor</a>
+              <a className="nav-link" href="/pareri">Parerile elevilor</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/capsula-timpului">Capsula timpului</a>
