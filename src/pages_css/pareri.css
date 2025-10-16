@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(135deg, #1E3C72, #2A5298, #FDC830);
+  color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  place-self: center;
+	background: linear-gradient(90deg, #FFE259, #FFFFFF, #FDC830) -100% / 200%;
+
+
+
+	-webkit-background-clip: text;
+	        background-clip: text;
+	color: transparent;
+	font: 900 clamp(2em, 5vw, 10em) exo, sans-serif;
+	animation: shimmer 2s linear infinite
+}
+
+@keyframes shimmer { to { background-position: 100%
+}
+}
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.2em, 3vw, 2.5em);
+  color: #fdfdfd;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4),
+               0 0 20px rgba(0, 229, 255, 0.3);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.05);
+  color: #FFD700;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6),
+               0 0 30px rgba(255, 215, 0, 0.6);
+}
