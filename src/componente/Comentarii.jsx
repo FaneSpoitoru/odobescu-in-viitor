@@ -1,5 +1,6 @@
+/*
 import React, { useState, useEffect } from "react";
-import { db } from "../folos/firebase.js";
+
 import { collection, addDoc, onSnapshot, query, orderBy } from "firebase/firestore";
 import Nav from "./nav.jsx";
 
@@ -51,3 +52,4 @@ export default function Comentarii() {
     </div>
   );
 }
+*/
