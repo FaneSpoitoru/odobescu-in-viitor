@@ -1,4 +1,4 @@
-/*
+
 import React, { useState, useEffect } from "react";
 
 import { collection, addDoc, onSnapshot, query, orderBy } from "firebase/firestore";
@@ -52,4 +52,3 @@ export default function Comentarii() {
     </div>
   );
 }
-*/
