@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: 'main.jsx', // folosește căi relative
+  base: '/odoebscu-in-viitor', // folosește căi relative
 });
