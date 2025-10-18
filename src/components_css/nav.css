@@ -1,34 +1,89 @@
-nav {  
-background: linear-gradient(90deg, #1E3C72, #2A5298);
-box-shadow: 0 2px 15px rgba(30, 60, 114, 0.5);
-
-        .nav-link {
-            color: white;
-            transition: color 0.3s;
-        }
-
-        .nav-link:hover {
-            color: #e9e634;
-        }
-
-         .navbar-brand {
-               color: white;
-               font-weight: bold;
-               font-size: 1.5rem;
-               letter-spacing: 1px;
-               text-transform: uppercase;
-               transition: color 0.3s;
-               padding-left: 5%;
-         }
-
-         .navbar-toggler {
-               border-color: rgba(255, 255, 255, 0.1);
-         }
-         
-        font-family: "Poppins", sans-serif;
+nav.navbar {
+  background: linear-gradient(90deg, rgba(30, 60, 114, 0.9), rgba(42, 82, 152, 0.9));
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
+/* Brand-ul (titlul Meniu) */
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 5%;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
 
-    }
+.navbar-brand:hover {
+  color: #ffea00 !important;
+  text-shadow: 0 0 10px #ffee58, 0 0 20px #ffee58;
+}
+
+/* Butonul de mobil */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Linkurile din meniu */
+.nav-link {
+  color: #ffffff !important;
+  margin: 0 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Efect de bară luminoasă sub link */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ffea00, #00ffd0);
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ffea00 !important;
+}
+
+/* Navbar-ul când dai scroll */
+.navbar.scrolled {
+  background: rgba(25, 45, 90, 0.95);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* Responsivitate */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: rgba(25, 45, 90, 0.95);
+    border-radius: 0 0 15px 15px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 8px 0;
+    margin: 5px 0;
+  }
+}

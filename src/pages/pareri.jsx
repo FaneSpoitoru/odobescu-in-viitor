@@ -3,6 +3,7 @@ import Nav from "../componente/nav";
 import '../pages_css/pareri.css';
 import Footer from "../componente/footer";
 
+  
 function Pareri() {
   return (
     <div>
@@ -10,10 +11,12 @@ function Pareri() {
 
 
 
-      <header>
-        <h1>Părerile elevilor noștri</h1>
-        <p>Ajută-ne să facem liceul un loc și mai bun! Scrie ce îți place și ce ai îmbunătăți.</p>
-      </header>
+       
+      <h1>Părerile elevilor</h1>
+      <p>Spune-ne ce părere ai despre orele și profesorii noștri!</p>
+
+     
+    
 
       <Footer />
     </div>
