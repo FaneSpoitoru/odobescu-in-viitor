@@ -3,6 +3,7 @@ import WelcomePage from './pages/welcome_page';
 import CapsulaTimpului from './pages/capsula_timpului';
 import Pareri from './pages/pareri';
 import Comentarii from './componente/Comentarii';
+import "./App.css";
 
 function App() {
   return (

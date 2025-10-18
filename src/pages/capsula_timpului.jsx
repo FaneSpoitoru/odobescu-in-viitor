@@ -7,6 +7,7 @@ import Formular from "../componente/formular";
 
 
 const CapsulaTimpului = () => {
+  /*/sugestile elevilor*/
   return (
     <div>
       <Nav />
