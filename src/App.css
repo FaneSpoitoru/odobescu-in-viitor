@@ -1,67 +1,40 @@
-/* Root ocupă tot ecranul și fundalul se continuă în jos */
-
-#root {
-  min-height: 100vh; /* ocupă înălțimea completă a ecranului */
-  width: 100%;
-  margin: 0;
-  padding: 2rem;
+.hero {
+  height: 100vh; /* full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1E3C72, #2A5298, #FDC830);
+  color: rgb(255, 255, 255);
   text-align: center;
-  background: radial-gradient(circle at top right, #ffde59 0%, #fff8dc 40%, #ffffff 100%);
-  background-attachment: fixed; /* păstrează efectul continuu la scroll */
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  gap: 20px;
 }
 
-/* LOGO */
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-/* ANIMAȚIE LOGO */
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-/* CARD */
-.card {
-  padding: 2em;
-  background: rgba(255, 255, 255, 0.75);
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-}
-
-/* TEXT */
-.read-the-docs {
-  color: #888;
-}
-
-/* OPCIONAL: adaugă o mică umbră sus și jos */
-body {
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
   margin: 0;
-  background: linear-gradient(to bottom, #fffbe7, #ffffff);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.hero button {
+  background: white;
+  color: #2451b3;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background: #eee;
 }
