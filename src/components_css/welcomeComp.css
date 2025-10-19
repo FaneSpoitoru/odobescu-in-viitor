@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #1E3C72, #2A5298, #FDC830);
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: 'Poppins', sans-serif;
   gap: 20px;

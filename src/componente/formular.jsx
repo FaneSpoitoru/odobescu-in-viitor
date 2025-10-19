@@ -1,5 +1,5 @@
 import React from "react";
-import { db2, storage2 } from "../folos/firebase.js";
+//import { db2, storage2 } from "../folos/firebase.js";
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // 👈
 
