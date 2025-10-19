@@ -18,8 +18,8 @@ function Pareri() {
 
      
     
-      <FormularPareri/>
-      <Footer />
+      <FormularPareri/> 
+      <Footer/>
     </div>
   );
 };
