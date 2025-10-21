@@ -15,8 +15,10 @@ const CapsulaTimpului = () => {
       <h2>Adauga un mesaj in capsula</h2>
       
       <Capsula />
-      <img src="./public/capsula.png" alt="capsula"   />
+      
       <Formular />
+
+      <img src="capsula.png" alt="" />
 
       
     </div>

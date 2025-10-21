@@ -2,6 +2,11 @@ body {
   background: linear-gradient(135deg, #1E3C72, #2A5298, #FDC830);
   color: white;
     font-family: 'Poppins', sans-serif;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1 {
