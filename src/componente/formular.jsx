@@ -1,7 +1,8 @@
 import React from "react";
-//import { db2, storage2 } from "../folos/firebase.js";
+import { db2, storage2 } from "../folos/firebase.js";
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // 👈
+import '../components_css/formularCapsula.css';
 
 function Formular() {
   const handleSubmit = async (e) => {
@@ -44,22 +45,31 @@ function Formular() {
       document.getElementById("msj").value = "";
       document.getElementById("poze").value = "";
     } catch (err) {
-      console.error("Eroare la trimitere:", err);
-      alert("Eroare la trimitere!");
+      if(poze.type !== "image/png" && poze.type !== "image/jpg" && poze.type !== "image/jpeg") {
+        alert("Tipul fișierului nu este valid. Vă rugăm să încărcați o imagine PNG, JPG sau JPEG.");
+        return;
+      }
+      else console.error("Eroare la trimitere: ", err);
     }
   };
 
   return (
     <div>
-      <form className="artist-request-form">
-        <label htmlFor="msj" className="label-name">Mesaj:</label><br />
+      <form className="capsula-form">
+        <label htmlFor="msj" className="label-name" id="label-msj">Mesaj:</label><br />
         <input type="text" id="msj" name="msj" className="input-field" /><br />
 
-        <label htmlFor="poze" className="label-name">Poza:</label><br />
-        <input type="file" id="poze" name="poze" className="input-field" /><br />
-
-        <button type="button" className="submit-button-form" onClick={handleSubmit}>
-          Trimite Cererea
+        <label htmlFor="poze" className="label-name" id="label-poze">Adauga Poza<input type="file" id="poze" name="poze" className="input-field" /></label><br />
+        
+      
+        <button type="button" className="submit-button-form" id="form-send" onClick={handleSubmit}>
+          <span className="circle1"></span>
+    <span className="circle2"></span>
+    <span className="circle3"></span>
+    <span className="circle4"></span>
+    <span className="circle5"></span>
+    <span className="text">Submit</span>
+    
         </button>
       </form>
     </div>
