@@ -10,11 +10,13 @@ function Pareri() {
     <div>
       <Nav />
 
-
+    <br />
 
        
       <h1>Părerile elevilor</h1>
-      <p>Spune-ne ce părere ai despre orele și profesorii noștri!</p>
+      
+      <br />
+      <br />
 
      
     

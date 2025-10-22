@@ -11,6 +11,8 @@ const CapsulaTimpului = () => {
   return (
     <div>
       <Nav />
+      <br />
+      <br />
       <h1>Capsula Timpului</h1>
       <h2>Adauga un mesaj in capsula</h2>
       

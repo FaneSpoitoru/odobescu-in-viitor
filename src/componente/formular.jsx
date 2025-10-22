@@ -5,6 +5,8 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage"; // 👈
 import '../components_css/formularCapsula.css';
 
 function Formular() {
+
+  var mesajetrm = 0;
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -44,6 +46,8 @@ function Formular() {
       alert("Trimis cu succes!");
       document.getElementById("msj").value = "";
       document.getElementById("poze").value = "";
+      mesajetrm += 1;
+      console.log("Numărul mesajelor trimise: ", mesajetrm);
     } catch (err) {
       if(poze.type !== "image/png" && poze.type !== "image/jpg" && poze.type !== "image/jpeg") {
         alert("Tipul fișierului nu este valid. Vă rugăm să încărcați o imagine PNG, JPG sau JPEG.");
@@ -56,7 +60,7 @@ function Formular() {
   return (
     <div>
       <form className="capsula-form">
-        <label htmlFor="msj" className="label-name" id="label-msj">Mesaj:</label><br />
+        <label htmlFor="msj" className="label-name" id="label-msj">Mesaj</label><br />
         <input type="text" id="msj" name="msj" className="input-field" /><br />
 
         <label htmlFor="poze" className="label-name" id="label-poze">Adauga Poza<input type="file" id="poze" name="poze" className="input-field" /></label><br />

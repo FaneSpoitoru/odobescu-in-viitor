@@ -3,7 +3,7 @@
   width: 500px;
   height: 100px;
   margin: 50px auto;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,10 +106,16 @@ button:hover span:not(:nth-child(6)) {
 }
 
 
-#label-masaj{
+#label-msj{
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    color: #333;
+    color: #ffffff;
+    margin-bottom: 5px;
+    background: linear-gradient( 45deg, #4f46e5, #3b82f6, #0c66ed);
+    padding: 10px 20px;
+    border-radius: .6rem;
+    cursor:default;
+
     
 }

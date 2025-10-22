@@ -3,7 +3,7 @@
   width: 500px;
   height: 100px;
   margin: 50px auto;
-  cursor: pointer;
+  cursor: default;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,5 +32,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  ;
+  cursor: default;
+
 }
+
+
+h1{
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
