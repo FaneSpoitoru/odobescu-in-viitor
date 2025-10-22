@@ -294,3 +294,20 @@ button:hover span:not(:nth-child(6)) {
   transform: translateY(0);
 }
 
+
+
+
+
+@media (max-width: 768px) {
+    .parent {
+        display: block; /* fiecare mesaj pe rând */
+        margin: 20px; /* mai puțin margin pe mobil */
+        max-height: calc(3 * 150px + 2 * 14px); /* 3 mesaje + gap */
+        overflow-y: auto; /* scroll dacă sunt mai multe mesaje */
+    }
+
+    .message-card {
+        width: 100%;
+        margin-bottom: 14px; /* spațiu între mesaje */
+    }
+}
