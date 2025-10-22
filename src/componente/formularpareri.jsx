@@ -97,7 +97,7 @@ export default function FormularPareri() {
 
       <div className="parent">
         {/* Div-uri statice */}
-        <div className="div1">The folks at FreeAgent did a great job formatting their testimonial page...</div>
+        {/*<div className="div1">The folks at FreeAgent did a great job formatting their testimonial page...</div>
         <div className="div2">Clear Slide’s testimonial page is nested within their case studies home page...</div>
         <div className="div3">33333333333333333333333333 33333333333 ...</div>
         <div className="div4">4</div>
@@ -109,7 +109,7 @@ export default function FormularPareri() {
         <div className="div11">11</div>
         <div className="div12">12</div>
         <div className="div13">13</div>
-        <div className="div14">14</div>
+        <div className="div14">14</div>*/}
 
         
         {messages.map((msg, index) => (
@@ -123,7 +123,6 @@ export default function FormularPareri() {
           </div>
         ))}
       </div>
-    </div>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Nav from "../componente/nav";
 import '../pages_css/capsula_timpului.css';
 import Capsula from "../componente/capsula";
 import Formular from "../componente/formular";
+import Footer from "../componente/footer";
 
 
 
@@ -21,6 +22,7 @@ const CapsulaTimpului = () => {
       <Formular />
 
       <img src="capsula.png" alt="" />
+      <Footer/>
 
       
     </div>

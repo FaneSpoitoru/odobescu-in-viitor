@@ -10,18 +10,13 @@ function Pareri() {
     <div>
       <Nav />
 
-    <br />
+    
 
        
-      <h1>Părerile elevilor</h1>
+      
       
       <br />
       <br />
-
-     
-    
-
-      <Nav />    
       <FormularPareri/> 
       <Footer/>
     </div>

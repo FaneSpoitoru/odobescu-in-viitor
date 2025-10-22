@@ -1,22 +1,26 @@
-.footer {
-  position: fixed;          /* Rămâne jos chiar și la scroll */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #004080;
+
+/* Footer general */
+footer {
+  background-color: rgba(38, 23, 255, 0.6); /* negru semi-transparent */
   color: white;
-  padding: 10px 0;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(5px); /* efect de blur pe fundal */
+  box-shadow: 0 -2px 10px rgba(51, 71, 255, 0.3);
+  font-family: 'Arial', sans-serif;
 }
 
-.footer p {
-  margin: 2px;
-  font-size: 14px;
+/* Linkuri din footer */
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-.footer p:last-child {
-  font-size: 12px;
-  opacity: 0.8;
+footer a:hover {
+  color: #ffd700; /* auriu la hover */
 }
