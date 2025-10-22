@@ -20,6 +20,8 @@ function Pareri() {
 
      
     
+
+      <Nav />    
       <FormularPareri/> 
       <Footer/>
     </div>

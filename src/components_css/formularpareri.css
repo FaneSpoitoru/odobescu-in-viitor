@@ -223,3 +223,74 @@ button:hover span:not(:nth-child(6)) {
   transform: translate(-50%, -50%) scale(4);
   transition: 1.5s ease;
 }
+        
+
+
+.feedback-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.feedback-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #4f8cff;
+  box-shadow: 0 0 5px rgba(79, 140, 255, 0.3);
+  outline: none;
+}
+
+.word-count {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.25rem;
+  text-align: right;
+}
+
+.feedback-form button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #4f8cff, #6fa3ff);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.3s ease;
+}
+
+.feedback-form button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #3f7afc, #5d96ff);
+}
+
+.feedback-form button:active {
+  transform: translateY(0);
+}
+

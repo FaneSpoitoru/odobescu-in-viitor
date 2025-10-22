@@ -11,7 +11,6 @@ export default function FormularPareri() {
   const [messages, setMessages] = useState([]);
   const [expandedMessages, setExpandedMessages] = useState(new Set()); //  state pentru mesaje expandate
 
- 
   useEffect(() => {
     const fetchMessages = async () => {
       const q = query(collection(db, "messages"), orderBy("timestamp", "desc"));
@@ -96,7 +95,23 @@ export default function FormularPareri() {
         </button>
       </form>
 
-       <div className="parent">
+      <div className="parent">
+        {/* Div-uri statice */}
+        <div className="div1">The folks at FreeAgent did a great job formatting their testimonial page...</div>
+        <div className="div2">Clear Slide’s testimonial page is nested within their case studies home page...</div>
+        <div className="div3">33333333333333333333333333 33333333333 ...</div>
+        <div className="div4">4</div>
+        <div className="div5">Another really cool, unique thing they do? Each client story module links to the client’s website...</div>
+        <div className="div7">7</div>
+        <div className="div8">8</div>
+        <div className="div9">9</div>
+        <div className="div10">10</div>
+        <div className="div11">11</div>
+        <div className="div12">12</div>
+        <div className="div13">13</div>
+        <div className="div14">14</div>
+
+        
         {messages.map((msg, index) => (
           <div
             className={`message-card ${expandedMessages.has(index) ? 'expanded' : ''}`}
@@ -108,6 +123,7 @@ export default function FormularPareri() {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 }
