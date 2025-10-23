@@ -3,7 +3,9 @@ import Nav from "../componente/nav";
 import '../pages_css/pareri.css';
 import Footer from "../componente/footer";
 import FormularPareri from "../componente/formularpareri";
-
+import QuestionForm from "../componente/formulardeintrebare";
+import QuestionList from "../componente/formulardetot";
+import AnswerForm from "../componente/AnswerForm";
   
 function Pareri() {
   return (
@@ -14,11 +16,12 @@ function Pareri() {
 
        
       
-      
+      <QuestionForm/>
+      <QuestionList/>
       <br />
       <br />
-      <FormularPareri/> 
-      <Footer/>
+      {/*<FormularPareri/> 
+      <Footer/>*/}
     </div>
   );
 };
