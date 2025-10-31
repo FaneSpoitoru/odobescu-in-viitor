@@ -30,7 +30,7 @@ function Nav() {
               <a className="nav-link" href="/capsula-timpului">Capsula timpului</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Liceul de-a lungul timpului</a>
+              <a className="nav-link" href="/liceul-de-a-lungul-timpului">Liceul de-a lungul timpului</a>
             </li>
           </ul>
         </div>

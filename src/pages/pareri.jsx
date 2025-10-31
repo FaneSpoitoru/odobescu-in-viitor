@@ -21,7 +21,8 @@ function Pareri() {
       <br />
       <br />
       {/*<FormularPareri/> 
-      <Footer/>*/}
+      */}
+      <Footer/>
     </div>
   );
 };
