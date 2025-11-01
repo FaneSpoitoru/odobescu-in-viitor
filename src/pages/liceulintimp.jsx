@@ -10,6 +10,7 @@ function LiceulInTimp() {
   return (
     <div>
       <Nav />
+      <br />
       <h1>Liceul în Timp</h1>
     <Slideshow />
       <Footer />
