@@ -106,7 +106,7 @@ useEffect(() => {
     <li id="date-li">Dispune de laboratoare moderne (informatică, fizică, chimie, biologie), o bibliotecă bogată și o curte renovată.</li>
     <li id="date-li">Elevii participă la proiecte Erasmus, activități culturale și campanii de voluntariat.</li>
     <li id="date-li">Profesorii pun accent pe gândire critică, creativitate și implicare socială.</li>
-Bran: Si mie la tine
+
 
     <div className="slideshow2" style={{ maxWidth: "500px" }}>
       <img className="mySlides2 " src="./liceu/sala multimedia.jpg" style={{ width: "100%" }} alt="fatzada" />

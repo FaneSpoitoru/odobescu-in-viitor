@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%; /* Ajustează lățimea pentru ecrane mici */
+    height: auto; /* Ajustează înălțimea pentru ecrane mici */
+    flex-direction: column; /* Schimbă direcția flex pentru ecrane mici */
+  }
 }
 
 .mySlides, .mySlides2, .mySlides3 {

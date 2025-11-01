@@ -8,6 +8,7 @@ function WelcomePage() {
     <div>
       <Nav />
       <Welcome />
+     
       <Footer/>
     </div>
   );
